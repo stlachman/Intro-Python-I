@@ -22,3 +22,26 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def show_calendar():
+    user_input = input("14_cal.py").split(" ")
+    current_date = datetime.today()
+    if len(user_input) == 1:
+        mm = current_date.month
+        yy = current_date.year
+    elif len(user_input) == 2:
+        mm = int(user_input[1])
+        yy = current_date.year
+    elif len(user_input) == 3:
+        mm = int(user_input[1])
+        yy = int(user_input[2])
+    else:
+        print("Please submit two arguments for month and year.")
+        return
+
+    # current_date = datetime.today()
+    print(calendar.month(yy, mm))
+
+
+show_calendar()
