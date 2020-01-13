@@ -16,7 +16,7 @@ for item in sys.argv:
     print(item)
 # Print out the OS platform you're using:
 # YOUR CODE HERE
-print(os.name)
+print(sys.platform)
 # Print out the version of Python you're using:
 # YOUR CODE HERE
 print(sys.version)
